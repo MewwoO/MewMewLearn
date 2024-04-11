@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 隐藏默认的音频控件 */
+        audio {
+            display: none;
+        }
+
+        /* 自定义图标的样式 */
+        .playIcon {
+            width: 35px;
+            height: 35px;
+            cursor: pointer; /* 添加指针样式，使图标看起来可点击 */
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="front">
+        <div class="word">
+            {{单词}}
+            <audio controls src="https://dict.youdao.com/dictvoice?le=en&audio={{单词}}"></audio>
+             <!-- 自定义图标元素 -->
+            <img class="playIcon" src="https://img.icons8.com/ios/50/medium-volume--v1.png" alt="medium-volume--v1" onclick="playAudio()">
+
+            <!-- 音频元素 -->
+            <audio id="audioPlayer">
+                <source src="https://dict.youdao.com/dictvoice?le=en&audio={{单词}}">
+            </audio>
+        </div>
+        <hr>
+        <div class="pronunciation">
+            {{音标}}
+        </div>
+    </div>
+
+</body>
+
+
+<!-- JavaScript 函数 -->
+<script>
+    function playAudio() {
+        var audio = document.getElementById("audioPlayer");
+        audio.play();
+        if (audio.paused) { // 如果音频暂停，则播放音频
+                audio.play();
+        } else {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    }
+</script>
+
+</html>
