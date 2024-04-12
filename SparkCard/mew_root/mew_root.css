@@ -1,0 +1,46 @@
+/* 页面居中 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 正面容器 */
+.front {
+    max-width: 800px;
+    /* 设置最大宽度 */
+    margin: 0 auto;
+    /* 居中 */
+    padding: 10px;
+    /* 添加内边距 */
+}
+
+/* 词根 */
+.root {
+    text-align: center;
+    font-family: "Noto Serif JP", serif;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 背面容器 */
+.front {
+    max-width: 800px;
+    /* 设置最大宽度 */
+    margin: 0 auto;
+    /* 居中 */
+    padding: 10px;
+    /* 添加内边距 */
+}
+
+/* 词根含义 */
+.root_meaning {
+    text-align: center;
+    font-family: "Noto Serif JP", serif;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+}

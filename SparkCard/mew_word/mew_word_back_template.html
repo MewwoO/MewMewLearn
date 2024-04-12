@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="back">
+        <div class="paraphrase_title">
+            「词义」
+        </div>
+        <div class="paraphrase" id="paraphrase">
+            {{释义}}
+            <div class="paraphrase_abnormal">
+                {{熟词僻义}}
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="note_title">
+            「助记」
+        </div>
+        <div class="note">
+            {{助记}}
+        </div>
+    </div>
+</body>
+
+<script>
+    var paraphrase = document.getElementById('paraphrase');
+    var maxWidth = 400; // 最大宽度
+    var initialFontSize = 25; // 初始字号
+    var minFontSize = 12; // 最小字号
+    var textLength = textContainer.textContent.length; // 获取文本长度
+
+    if (textLength > maxWidth) {
+        var newFontSize = initialFontSize * (maxWidth / textLength); // 计算新的字号
+        newFontSize = Math.max(newFontSize, minFontSize); // 确保不小于最小字号
+        textContainer.style.fontSize = newFontSize + 'px'; // 应用新的字号
+    }
+</script>
+
+</html>

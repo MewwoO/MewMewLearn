@@ -1,0 +1,138 @@
+/* 页面居中 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 隐藏默认的音频控件 */
+audio {
+    display: none;
+}
+
+/* 音频播放图标的样式 */
+.ukPlayIcon {
+    width: 20px;
+    height: 20px;
+    /* 添加指针样式，使图标看起来可点击 */
+    cursor: pointer;
+}
+
+/* 音频播放图标的样式 */
+.usPlayIcon {
+    width: 20px;
+    height: 20px;
+    /* 添加指针样式，使图标看起来可点击 */
+    cursor: pointer;
+}
+
+/* 单词 */
+.word {
+    text-align: center;
+    font-family: "Noto Serif JP", serif;
+    font-size: 45px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 英式音标 */
+.uk_pronunciation {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(98, 100, 105);
+}
+
+/* 美式音标 */
+.us_pronunciation {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(98, 100, 105);
+}
+
+/* 背面容器 */
+.back {
+    max-width: 800px;
+    /* 设置最大宽度 */
+    margin: 0 auto;
+    /* 居中 */
+    padding: 10px;
+    /* 添加内边距 */
+}
+
+/* 词义 */
+.paraphrase_title {
+    /* 背景色 */
+    background-color: rgba(154, 190, 175, 0.3);
+    /* 边角为弧形 */
+    border-radius: 5px;
+    /* 内边距 */
+    padding: 5px;
+    /* 底部外边距 */
+    margin-bottom: 10px;
+    /* 文本居中 */
+    text-align: left;
+    /* 字体大小 */
+    font-size: 15px;
+    /* 字体加粗 */
+    font-weight: 200;
+    /* 字体样式 */
+    font-family: "Noto Serif JP", serif;
+}
+
+/* 释义 */
+.paraphrase {
+    text-align: left;
+    font-size: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 释义 */
+.paraphrase_abnormal {
+    text-align: left;
+    font-size: 20px;
+    color: rgb(204, 22, 58);
+    font-family: "Noto Serif JP", serif;
+    font-weight: 400;
+    font-style: normal;
+    /* 将熟词僻义和释义放在同一行 */
+    display: inline-block;
+}
+
+/* 助记 */
+.note_title {
+    /* 背景色 */
+    background-color: rgba(154, 190, 175, 0.3);
+    /* 边角为弧形 */
+    border-radius: 5px;
+    /* 内边距 */
+    padding: 5px;
+    /* 底部外边距 */
+    margin-bottom: 10px;
+    /* 文本居中 */
+    text-align: left;
+    /* 字体大小 */
+    font-size: 15px;
+    /* 字体加粗 */
+    font-weight: 200;
+    /* 字体样式 */
+    font-family: "Noto Serif JP", serif;
+}
+
+/* 助记 */
+.note {
+    text-align: left;
+    font-size: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 400;
+    font-style: normal;
+}

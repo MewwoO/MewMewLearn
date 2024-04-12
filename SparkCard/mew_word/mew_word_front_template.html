@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="front">
+        <div class="word">
+            {{单词}}
+        </div>
+        <hr>
+        <div class="uk_pronunciation">
+            英
+            {{英式音标}}
+            <div style="display: inline-block;">
+                <!-- 音频播放图标元素 -->
+                <img class="ukPlayIcon" src="https://img.icons8.com/ios/50/medium-volume--v1.png"
+                    alt="medium-volume--v1" onclick="playUkAudio()">
+                <!-- 音频元素 -->
+                <audio id="ukAudioPlayer">
+                    <source src="https://dict.youdao.com/dictvoice?le=en&type=0&audio={{单词}}">
+                </audio>
+            </div>
+        </div>
+
+        <div class="us_pronunciation">
+            美
+            {{美式音标}}
+            <!-- 音频播放图标元素 -->
+            <img class="usPlayIcon" src="https://img.icons8.com/ios/50/medium-volume--v1.png" alt="medium-volume--v1"
+                onclick="playUsAudio()">
+            <!-- 音频元素 -->
+            <audio id="usAudioPlayer">
+                <source src="https://dict.youdao.com/dictvoice?le=en&type=1&audio={{单词}}">
+            </audio>
+
+        </div>
+    </div>
+
+</body>
+
+
+<!-- JavaScript 函数 -->
+<script>
+    // 英式发音
+    function playUkAudio() {
+        var audio = document.getElementById("ukAudioPlayer");
+        if (audio.paused) { // 如果音频暂停，则播放音频
+            audio.play();
+        } else {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    }
+    // 美式发音
+    function playUsAudio() {
+        var audio = document.getElementById("usAudioPlayer");
+        if (audio.paused) { // 如果音频暂停，则播放音频
+            audio.play();
+        } else {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    }
+</script>
+
+</html>
