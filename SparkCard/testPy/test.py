@@ -48,6 +48,8 @@ def process_excel_data(input_file, output_folder, first_row_content):
                     ],  # 第二行是列名
                 ]
                 word_group_rows.extend(new_rows)
+            if row[0].isalpha():
+                
             word_group_rows.append(row)
             if len(phrase_group_rows) != 0:
                 current_phrase_group = pd.DataFrame(phrase_group_rows)
